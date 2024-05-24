@@ -14,3 +14,11 @@ const userSchema = new mongoose.Schema({
     email:String,
     age:Number,
 });
+
+const User = mongoose.model("User",userSchema);
+
+const user1 = new User({
+    name : "Adam",
+    age:24,
+    email : "adamji@gmail.com"
+});
